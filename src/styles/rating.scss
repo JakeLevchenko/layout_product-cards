@@ -1,0 +1,39 @@
+.rating {
+  @include flex-between;
+
+  width: 166px;
+  margin: 16px 0 0;
+
+  &__star {
+    background-image: url(../images/star.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+  }
+
+  &__stars {
+    @include flex-between;
+
+    height: 16px;
+    width: 96px;
+
+    & .rating__star:nth-child(-n + 4) {
+      background-image: url(../images/star-active.svg);
+    }
+  }
+
+  &__reviews {
+    font-weight: $font-weight-regular;
+    font-size: 10px;
+    line-height: 16px;
+    text-align: right;
+    vertical-align: bottom;
+
+    text-decoration: none;
+    color: $color-dark;
+
+    width: 53px;
+    height: 16px;
+  }
+}

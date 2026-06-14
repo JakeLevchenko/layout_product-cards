@@ -1,0 +1,29 @@
+.price {
+  @include flex-between;
+
+  width: 166px;
+  margin: 24px 0 0;
+
+  &__text {
+    margin: 0;
+    font-weight: $font-weight-regular;
+    font-size: 12px;
+    line-height: 18px;
+
+    height: 18px;
+    width: 31px;
+    color: $color-gray;
+  }
+
+  &__value {
+    margin: 0;
+    font-weight: $font-weight-bold;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: right;
+
+    width: 50px;
+    height: 18px;
+    color: $color-dark;
+  }
+}
