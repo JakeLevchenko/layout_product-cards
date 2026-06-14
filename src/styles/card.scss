@@ -75,6 +75,10 @@ body {
 
       width: 53px;
       height: 16px;
+
+      &:hover{
+        color: $color-gray;
+      }
     }
   }
 
