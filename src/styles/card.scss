@@ -57,6 +57,59 @@ body {
     color: $color-gray;
   }
 
+  &__rating {
+    @include flex-between;
+
+    width: 166px;
+    margin: 16px 0 0;
+
+    &-reviews {
+      font-weight: $font-weight-regular;
+      font-size: 10px;
+      line-height: 16px;
+      text-align: right;
+      vertical-align: bottom;
+
+      text-decoration: none;
+      color: $color-dark;
+
+      width: 53px;
+      height: 16px;
+    }
+  }
+
+
+  &__price {
+    @include flex-between;
+
+    width: 166px;
+    margin: 24px 0 0;
+
+    &-text {
+      margin: 0;
+      font-weight: $font-weight-regular;
+      font-size: 12px;
+      line-height: 18px;
+
+      height: 18px;
+      width: 31px;
+      color: $color-gray;
+    }
+
+    &-value {
+      margin: 0;
+      font-weight: $font-weight-bold;
+      font-size: 16px;
+      line-height: 18px;
+      text-align: right;
+
+      width: 50px;
+      height: 18px;
+      color: $color-dark;
+    }
+  }
+
+
   &__button {
     @include flex-center;
 
